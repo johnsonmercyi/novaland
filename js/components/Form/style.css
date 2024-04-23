@@ -1,0 +1,48 @@
+@import url(../../../css/global-reset.css);
+
+.form {
+  width : 100%;
+  height: auto;
+
+  margin          : auto;
+  background-color: rgb(65, 64, 66, 0.1);
+
+  padding: 2rem;
+
+  display              : grid;
+  grid-template-columns: 1fr;
+  gap                  : 10px;
+
+}
+
+.form h2 {
+  width  : 100%;
+  padding: 1rem 0;
+
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  font-size  : 1.6rem;
+  font-weight: 500;
+}
+
+.form .main {
+  width: 100%;
+  margin: auto;
+  display              : grid;
+  grid-template-columns: 1fr;
+  gap                  : 10px;
+}
+
+@media(min-width:1000px) {
+  .form {
+    padding: 2rem;
+  }
+
+  .form .main {
+    width: 87%;
+    max-width: 80rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

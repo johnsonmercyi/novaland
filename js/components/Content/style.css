@@ -1,0 +1,30 @@
+@import url(../../../css/global-reset.css);
+
+.content {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.5;
+  /* text-align: justify; */
+  text-align: left;
+}
+
+.content h2 {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  font-weight: 400;
+}
+
+.content p,
+.content div.ul-body {
+  font-size: 1.1rem;
+}
+
+.content div.ul-body {
+  padding: 0 2rem;
+}

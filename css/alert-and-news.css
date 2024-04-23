@@ -1,0 +1,56 @@
+main {
+  height: auto;
+}
+
+div.section {
+  width : 100%;
+  height: auto;
+
+  margin-bottom: 2rem;
+}
+
+div.section.section-1 {
+  flex-direction: column-reverse;
+  row-gap       : 10px;
+}
+
+div.section.section-2 {
+  align-items: center;
+  margin-top : 3rem;
+}
+
+div.section div {
+  width : 100%;
+  height: auto;
+
+  display           : flex;
+  flex-direction    : column;
+  /* justify-content: center; */
+}
+
+div.section.section-2 div.book-appointment-wrapper {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  /* align-items : center; */
+  row-gap        : 10px;
+}
+
+div.section.section-2 div.book-appointment-wrapper h2 {
+  font-weight: 500;
+  font-size  : 1.3rem;
+  text-align : center;
+}
+
+div.section.section-3 {
+  flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+
+  div.section.section-1,
+  div.section {
+    flex-direction: row;
+    column-gap    : 10px;
+  }
+}

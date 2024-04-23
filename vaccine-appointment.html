@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaccine</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/vaccine.css" />
+    <script src="./js/components/Header/Header.js"></script>
+    <script src="./js/components/footer/Footer.js"></script>
+    <script src="./js/components/Intro/Intro.js"></script>
+    <script src="./js/components/Sidebar/Sidebar.js"></script>
+    <script src="./js/components/PageLink/PageLink.js"></script>
+    <script src="./js/components/Content/Content.js"></script>
+    <script src="./js/components/Guideline/Guideline.js"></script>
+    <script src="./js/components/Form/Form.js"></script>
+    <script src="./js/components/ui/TextField/TextField.js"></script>
+    <script src="./js/components/ui/Select/Select.js"></script>
+    <script type="module" src="./js/components/ui/Button/Button.js"></script>
+  </head>
+
+  <body>
+    <nova-header showheadertext="false"></nova-header>
+    <div class="container">
+      <main>
+        <nova-intro></nova-intro>
+        <div class="section section-1">
+          <div>
+            <!-- <nova-pagelink></nova-pagelink> -->
+            <nova-guideline></nova-guideline>
+            <nova-content></nova-content>
+          </div>
+          <nova-sidebar></nova-sidebar>
+        </div>
+      </main>
+    </div>
+    <nova-form
+      class="form"
+      id="appointmentForm"
+      formtitle="Vaccination Appointment Form"
+    >
+      <nova-field
+        name="healthCardNumber"
+        type="text"
+        placeholder="Health card number"
+        showlabel="false"
+      ></nova-field>
+
+      <nova-field
+        name="email"
+        type="email"
+        placeholder="Email"
+        showlabel="false"
+      ></nova-field>
+
+      <nova-field
+        name="address"
+        type="text"
+        placeholder="Address"
+        showlabel="false"
+      ></nova-field>
+
+      <nova-select
+        name="vaccineType"
+        showlabel="false"
+        label="Vaccine type"
+      ></nova-select>
+
+      <nova-field
+        name="dateOfBirth"
+        type="date"
+        placeholder="Date of birth"
+        showlabel="false"
+      ></nova-field>
+
+      <nova-select
+        name="vaccineLocation"
+        showlabel="false"
+        label="Vaccine location"
+      ></nova-select>
+
+      <nova-field
+        name="availableDate"
+        type="date"
+        placeholder="Available date"
+        showlabel="false"
+      ></nova-field>
+
+      <nova-field
+        name="availableTime"
+        type="time"
+        placeholder="Available time"
+        showlabel="false"
+      ></nova-field>
+
+      <nova-button text="Submit" type="submit"></nova-button>
+    </nova-form>
+    <nova-footer copyright="Copyright &copy; NovaLand 2024"></nova-footer>
+    <script type="module" src="./js/vaccine-appointment.js"></script>
+  </body>
+</html>

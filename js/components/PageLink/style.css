@@ -1,0 +1,58 @@
+@import url(../../../css/global-reset.css);
+
+.page-link {
+  width           : 100%;
+  max-width: 100%;
+  height          : auto;
+  background-color: rgb(65, 64, 66, 0.2);
+  border-radius   : 0.5rem;
+
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-start;
+  /* align-items    : flex-start; */
+
+  padding: 1rem 1rem;
+}
+
+.page-link h3 {
+  width : 100%;
+  height: auto;
+
+  font-size  : 1.2rem;
+  font-weight: 400;
+  text-align : flex-start;
+
+  margin-bottom: 1rem;
+}
+
+.page-link .item {
+  width : fit-content;
+  height: 2.3rem;
+
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+
+  border-radius: 0.5rem;
+}
+
+.page-link .item span,
+.page-link .item a {
+  height: 100%;
+
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.page-link .item span {
+  width: 3rem;
+}
+
+.page-link .item a {
+  width          : 100%;
+  color          : #007FFF;
+  justify-content: flex-start;
+  font-size      : 1.1rem;
+}

@@ -1,0 +1,27 @@
+@import url(../../../css/global-reset.css);
+
+.intro {
+  width : 100%;
+  height: auto;
+
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-start;
+  align-items    : flex-start;
+  line-height: 1.5;
+  text-align: justify;
+
+  margin-bottom: 1rem;
+}
+
+.intro .body {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.intro h1 {
+  width      : 100%;
+  height     : auto;
+  padding    : 1rem 0;
+  text-align: left;
+}

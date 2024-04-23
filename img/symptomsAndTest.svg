@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x31_-outline-expand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;fill:#FFCC3B;}
+	.st1{fill:#FFCC3B;}
+	.st2{fill:#414042;}
+	.st3{fill:#D36767;}
+	.st4{fill:#009658;}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:#E0C494;}
+</style>
+<path class="st0" d="M50,775V600L25,425V262.5c0-124.3,100.7-225,225-225s225,100.7,225,225L537.5,425h-75v200h-175v150H50z"/>
+<path class="st1" d="M25,262.5V425h25c55.2,0,100-44.8,100-100c-27.6,0-50-22.4-50-50s22.4-50,50-50v-62.5h250c69,0,125-56,125-125
+	H250C125.7,37.5,25,138.2,25,262.5L25,262.5z"/>
+<path class="st2" d="M462.5,550h-50c-27.6,0-50-22.4-50-50h25c0,13.8,11.2,25,25,25h50V550z"/>
+<path class="st2" d="M362.5,334.5c-23.4,0-45.3-9.1-61.9-25.6l17.7-17.7c11.8,11.8,27.5,18.3,44.2,18.3s32.4-6.5,44.2-18.3
+	l17.7,17.7C407.8,325.4,385.9,334.5,362.5,334.5z"/>
+<polygon class="st3" points="612.5,300 625,387.5 700,387.5 700,300 "/>
+<polygon class="st2" points="550,200 550,300 650,300 687.5,475 775,475 775,287.5 712.5,200 "/>
+<rect x="527.1" y="87.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 94.0421 427.0363)" class="st2" width="70.7" height="25"/>
+<rect x="560.1" y="137.5" transform="matrix(0.9286 -0.3711 0.3711 0.9286 -13.2576 231.046)" class="st2" width="67.3" height="25"/>
+<path class="st4" d="M762.5,687.5c0,48.3-39.2,87.5-87.5,87.5s-87.5-39.2-87.5-87.5S626.7,600,675,600S762.5,639.2,762.5,687.5
+	L762.5,687.5z"/>
+<polygon class="st5" points="662.5,730.2 628.7,696.3 646.3,678.7 662.5,694.8 716.2,641.2 733.8,658.8 "/>
+<rect x="712.5" y="512.5" class="st2" width="25" height="25"/>
+<rect x="712.5" y="562.5" class="st2" width="25" height="25"/>
+<rect x="525" y="675" class="st2" width="25" height="25"/>
+<rect x="475" y="675" class="st2" width="25" height="25"/>
+<rect x="425" y="675" class="st2" width="25" height="25"/>
+<rect x="375" y="675" class="st2" width="25" height="25"/>
+<rect x="325" y="675" class="st2" width="25" height="25"/>
+<polygon class="st6" points="287.5,625 225,625 287.5,650 "/>
+</svg>

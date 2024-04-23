@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x31_-outline-expand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.3;fill:#009658;}
+	.st1{opacity:0.5;fill:#FFCC3B;}
+	.st2{fill:#009658;}
+	.st3{fill:#FFCC3B;}
+	.st4{fill:#414042;}
+</style>
+<path class="st0" d="M475,775H150c-27.6,0-50-22.4-50-50V75c0-27.6,22.4-50,50-50h325c27.6,0,50,22.4,50,50v650
+	C525,752.6,502.6,775,475,775L475,775z"/>
+<path class="st1" d="M525,612.5h250v-300H600V175c-41.4,0-75,33.6-75,75V612.5z"/>
+<path class="st1" d="M100,350c0,20.7-16.8,37.5-37.5,37.5S25,370.7,25,350s16.8-37.5,37.5-37.5S100,329.3,100,350L100,350z"/>
+<path class="st1" d="M100,425c0,20.7-16.8,37.5-37.5,37.5S25,445.7,25,425s16.8-37.5,37.5-37.5S100,404.3,100,425L100,425z"/>
+<path class="st1" d="M100,500c0,20.7-16.8,37.5-37.5,37.5S25,520.7,25,500s16.8-37.5,37.5-37.5S100,479.3,100,500L100,500z"/>
+<path class="st1" d="M100,575c0,20.7-16.8,37.5-37.5,37.5S25,595.7,25,575s16.8-37.5,37.5-37.5S100,554.3,100,575L100,575z"/>
+<path class="st2" d="M525,100H100V75c0-27.6,22.4-50,50-50h325c27.6,0,50,22.4,50,50V100z"/>
+<path class="st2" d="M100,700h425v25c0,27.6-22.4,50-50,50H150c-27.6,0-50-22.4-50-50V700z"/>
+<rect x="150" y="187.5" class="st3" width="125" height="100"/>
+<rect x="350" y="350" class="st3" width="125" height="100"/>
+<rect x="312.5" y="175" class="st4" width="175" height="25"/>
+<rect x="312.5" y="225" class="st4" width="175" height="25"/>
+<rect x="312.5" y="275" class="st4" width="125" height="25"/>
+<rect x="150" y="512.5" class="st3" width="125" height="100"/>
+<rect x="312.5" y="500" class="st4" width="175" height="25"/>
+<rect x="312.5" y="550" class="st4" width="175" height="25"/>
+<rect x="312.5" y="600" class="st4" width="25" height="25"/>
+<rect x="137.5" y="337.5" class="st4" width="175" height="25"/>
+<rect x="137.5" y="387.5" class="st4" width="175" height="25"/>
+<rect x="137.5" y="437.5" class="st4" width="175" height="25"/>
+<rect x="462.5" y="275" class="st4" width="25" height="25"/>
+<rect x="362.5" y="600" class="st4" width="25" height="25"/>
+<rect x="412.5" y="600" class="st4" width="25" height="25"/>
+<rect x="462.5" y="600" class="st4" width="25" height="25"/>
+</svg>

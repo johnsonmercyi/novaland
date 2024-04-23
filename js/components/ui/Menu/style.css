@@ -1,0 +1,48 @@
+@import url(../../../../css/global-reset.css);
+
+a {
+  width: 16rem;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu,
+.img-wrapper,
+.menu span {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.menu {
+  width : 100%;
+  height: 10rem;
+
+  flex-direction : column;
+
+  background-color: rgba(100, 118, 135, 0.1);
+
+  padding: 1rem 0;
+  /* margin: 0.5rem auto; */
+}
+
+.menu .img-wrapper {
+  width : 100%;
+  height: 6rem;
+}
+
+.menu img {
+  width : 100%;
+  height: 100%;
+}
+
+.menu span {
+  width      : 100%;
+  height     : 4rem;
+  text-align : center;
+  font-weight: 600;
+}
