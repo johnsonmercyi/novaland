@@ -256,18 +256,11 @@ export const pagesSubTopics = {
                 <li>Quarantine after you enter NovaLand is not required</li>
                 <li>Pre-boarding tests for cruise passengers are not required</li>
                 <li>As always, travel documents are required</li>
-                <li><li>Health checks to board planes and trains are not required</li>
+                <li>Health checks to board planes and trains are not required</li>
                 <li>Wearing masks on planes and trains is not required</li>
                 <li>It's strongly recommended that you wear a well-constructed and well-fitted mask or respirator while you travel</li>
                 <li>If you have symptoms of COVID-19, you shouldn't travel to NovaLand.</li>
-            </ul>
-      <span>If you feel sick or experience any symptoms of COVID-19 during your travel to NovaLand or upon arrival, you should:</span>
-      <br/>
-      <ul>
-      <li>Inform the flight attendant, cruise staff or a border services officer upon arrival. You may be referred to a Quarantine Officer for a health assessment and further direction.</li>
-      <li>Avoid taking public transportation</li>
-      <li>Check provincial or territorial requirements for what you need to do if you’re symptomatic or have tested positive for COVID-19</li>
-      </ul>`
+            </ul>`
     }, {
       header: "Travelling in and out of NovaLand",
       body: `<ul>
