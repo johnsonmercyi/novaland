@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
   submitButton && submitButton.shadowRoot.querySelector(".button-wrapper button")
     .addEventListener('click', async (event) => {
-      const resp = await fetch('/novaland/api/users');
+      const resp = await fetch('/novaland/api/userser');
       const data = await resp.json();
       console.log("RESPONSE: ", data);
       // const valid = validateFields();
