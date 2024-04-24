@@ -1,0 +1,55 @@
+@import url(../../../css/global-reset.css);
+.stats-card-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: rgba(102, 102, 102, 0.1);;
+}
+
+.stats-card-wrapper .stats-card{
+    width: 100%;
+    height: auto;
+    display: flex;;
+    padding: 0rem 2rem;
+}
+
+.stats-card-wrapper .stats-card .section-left{
+    width: 50%;
+    padding: 1rem 0rem;
+}
+.stats-card-wrapper .stats-card .section-left h3{
+    padding: 0.5rem 0;
+    color: green;
+}
+.stats-card-wrapper .stats-card .section-left h5{
+    padding: 0.5rem 0;
+    font-weight: 100;
+}
+.stats-card-wrapper .stats-card .section-left .weeky-change{
+    border-top: 1px solid #808080;
+    border-right: 1px solid #808080;
+    line-height: 1.5;
+}
+
+.stats-card-wrapper .stats-card .section-left .weeky-change span{
+    font-weight: 700;
+}
+
+.stats-card-wrapper .stats-card .section-right{
+    width: 50%;
+    align-content: flex-end;
+    padding: 1rem 0rem;
+    line-height: 1.5;
+}
+
+.stats-card-wrapper .stats-card .section-right .total{
+    padding-left: 2rem;
+    border-top: 1px solid #808080;
+}
+.stats-card-wrapper .stats-card .section-right .total h5{
+    padding: 0.5rem 0;
+    font-weight: 100;
+}
+
+.stats-card-wrapper .stats-card .section-right .total span{
+    font-weight: 700;
+}

@@ -1,0 +1,32 @@
+@import url(../../../css/global-reset.css);
+
+.single-card-wrapper {
+    width: 100%;
+    background-color: rgba(102, 102, 102, 0.1);;
+}
+
+.single-card-wrapper .single-card {
+    height: auto;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.single-card-wrapper .single-card .section-up{
+    padding: 0.5rem 0;
+    color: green;
+}
+
+.single-card-wrapper .single-card .section-down{
+    border-top: 1px solid #808080;
+    line-height: 1.5;
+}
+
+.single-card-wrapper .single-card .section-down h5{
+    padding: 0.5rem 0;
+    font-weight: 100;
+}
+
+.single-card-wrapper .single-card .section-down span{
+    padding: 1rem 0;
+    font-weight: 600;
+}

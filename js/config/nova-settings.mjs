@@ -206,25 +206,26 @@ export const pagesSubTopics = {
   alertandnews: [
     {
       header: "Weekly Highlights",
-      body: `<div class="weekly-highlights-body">
-              <span>xxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxx xxxxxxxxxxx</span>
-              <br/>
-              <h3>Subheader 1</h3>
-              <ul>
-                <li>xxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxx xxxxxxxxxxx</li>
+      body: `<ul>
+                <li>As COVID-19 cases continue to rise, our weekly report brings attention to the latest developments. Stay informed about the current situation and take necessary precautions to keep yourself and your loved ones safe.</li>
               </ul>
-              <br/>
-              <h3>Subheader 2</h3>
-              <ul>
-                <li>xxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxx xxxxxxxxxxx</li>
-              </ul>
-              <br/>
-              <h3>Subheader 3</h3>
-              <ul>
-                <li>xxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxx xxxxxxxxxxx</li>
-              </ul>
-            </div>`
-    }
+            `
+     },
+    // {
+    //   header: "Latest Covid-19 Numbers",
+    //   body: `<ul>
+    //             <li>Last updated: March 26, 2024. 9am EST</li>
+                
+    //           </ul>
+    //         `
+    // },
+    // {
+    //   header: "COVID-19 Activity Levels",
+    //   body: `<ul>
+    //             <li>Last updated: March 26, 2024. 9am EST</li>
+    //           </ul>
+    //         `
+    // }
   ],
   mentalhealth: [
     {
