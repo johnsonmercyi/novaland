@@ -207,7 +207,12 @@ export const pagesSubTopics = {
     {
       header: "Weekly Highlights",
       body: `<ul>
-                <li>As COVID-19 cases continue to rise, our weekly report brings attention to the latest developments. Stay informed about the current situation and take necessary precautions to keep yourself and your loved ones safe.</li>
+                <li>As we navigate through the ongoing COVID-19 pandemic, staying informed about the latest developments is essential. Our weekly highlights aim to keep you updated on the current situation, providing crucial information to help you make informed decisions and stay safe.</li>
+                <li>Throughout the past week, COVID-19 cases have continued to rise in many parts of the world. Despite efforts to control the spread of the virus, new variants and fluctuating infection rates present ongoing challenges. It is evident that we are still in the midst of a global health crisis, and it is more important than ever to remain vigilant. </li>
+                <li>In our weekly report, we provide updates on key statistics, including the number of new cases, hospitalizations, and fatalities. We also analyze trends in infection rates and vaccination progress, offering insights into the effectiveness of current containment measures. </li>
+                <li>Additionally, our report highlights any new developments in COVID-19 research, treatment options, and vaccine distribution. We aim to provide you with the most up-to-date information, allowing you to stay informed about the latest advancements in the fight against the virus. </li>
+                <li>As we continue to navigate these uncertain times, it is crucial to prioritize safety and follow recommended health guidelines. This includes practicing good hygiene, wearing masks in public spaces, maintaining social distancing, and getting vaccinated when eligible. By working together and remaining vigilant, we can help slow the spread of COVID-19 and protect ourselves and our communities. </li>
+                <li>Thank you for trusting us to keep you informed, and please remember that we are here to support you through this challenging time. Stay safe, stay informed, and take care of yourself and your loved ones. </li>
               </ul>
             `
      },

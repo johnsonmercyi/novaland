@@ -8,7 +8,7 @@
 .stats-card-wrapper .stats-card{
     width: 100%;
     height: auto;
-    display: flex;;
+    display: flex;
     padding: 0rem 2rem;
 }
 
@@ -52,4 +52,32 @@
 
 .stats-card-wrapper .stats-card .section-right .total span{
     font-weight: 700;
+}
+@media (max-width: 767px){
+    .stats-card-wrapper .stats-card{
+        display: block;
+    }
+
+    .stats-card-wrapper .stats-card .section-left {
+        width: 100%;
+    }
+    .stats-card-wrapper .stats-card .section-right {
+        width: 100%;
+    }
+    .stats-card-wrapper .stats-card .section-left .weeky-change {
+        border-right: none;
+    }
+    .stats-card-wrapper .stats-card .section-right .total {
+        padding-left: 0rem;
+    }
+    .stats-card-wrapper .stats-card {
+        padding: 0rem 1rem; 
+        margin: 0.5rem 0;
+    }
+    .stats-card-wrapper .stats-card .section-left{
+        padding: 0.5rem 0rem; 
+    }
+    .stats-card-wrapper .stats-card .section-right {
+        padding: 0.5rem 0rem; 
+    }
 }

@@ -52,6 +52,10 @@ div.section {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+}    
+#section-2 h2,
+#section-3 h2{
+  margin: 1rem 0;
 }
 stats-card {
   width: 100%;
@@ -70,4 +74,19 @@ stats-card {
 single-card{
   width: 49%;
   display: inline-block;
+}
+
+@media (max-width: 767px){
+  .section-2-single-card {
+    display: block;
+  }
+  single-card{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .section.section-2 .section-2-single-card{
+    flex-direction: column !important;
+    margin-top: initial;
+  }
 }
