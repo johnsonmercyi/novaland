@@ -19,7 +19,7 @@ class Controller
     echo json_encode($response);
   }
 
-  public function errorResponse($message, $status = 400)
+  public function errorResponse($message, $status = 500)
   {
     $response = [
       'success' => false,
