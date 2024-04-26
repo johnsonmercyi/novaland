@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const guidelinecontent = document.querySelector("nova-guideline");
 
   const form = document.querySelector("nova-form");
-  const healthCardNumber = document.querySelector("nova-field[name='healthCardNumber']");
+  const healthCardNumber = document.querySelector("nova-field[name='health_card_number']");
   const email = document.querySelector("nova-field[name='email']");
   const address = document.querySelector("nova-field[name='address']");
-  const vaccineType = document.querySelector("nova-select[name='vaccineType']");
-  const dateOfBirth = document.querySelector("nova-field[name='dateOfBirth']");
-  const vaccineLocation = document.querySelector("nova-select[name='vaccineLocation']");
-  const availableDate = document.querySelector("nova-field[name='availableDate']");
-  const availableTime = document.querySelector("nova-field[name='availableTime']");
+  const vaccineType = document.querySelector("nova-select[name='vaccine_type']");
+  const dateOfBirth = document.querySelector("nova-field[name='date_of_birth']");
+  const vaccineLocation = document.querySelector("nova-select[name='vaccine_location']");
+  const availableDate = document.querySelector("nova-field[name='available_date']");
+  const availableTime = document.querySelector("nova-field[name='available_time']");
 
   const submitButton = document.querySelector("nova-button");
 
@@ -44,14 +44,25 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
   submitButton && submitButton.shadowRoot.querySelector(".button-wrapper button")
     .addEventListener('click', async (event) => {
-      const resp = await fetch('/novaland/api/userser');
-      const data = await resp.json();
-      console.log("RESPONSE: ", data);
-      // const valid = validateFields();
-      // if (valid) {
-      //   const data = formData();
-      //   console.log("Data: ", data);
-      // }
+      // const resp = await fetch('/novaland/api/users');
+      // const data = await resp.json();
+      // console.log("RESPONSE: ", data);
+      const valid = validateFields();
+      if (valid) {
+        const data = formData();
+        // console.log("Data: ", data);
+        const response = await fetch('/novaland/api/vaccine_appointment', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const respData = await response.json();
+
+        console.log("FORM SUBMIT: ", respData);
+      }
     });
 
   function validateFields() {

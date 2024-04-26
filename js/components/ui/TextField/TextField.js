@@ -186,7 +186,6 @@ class TextField extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true));
     this.shadowRoot.querySelector('.input-field-wrapper input').addEventListener('input', (e) => {
       this._value = e.target.value;
-      console.log(this._value);
 
       /**
        * ⚠️This is not to be used.

@@ -6,4 +6,4 @@ RewriteBase /novaland/api/
 RewriteRule ^index\\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /novaland/api/api.php [L]
+RewriteRule . /novaland/api/routes.php [L]
