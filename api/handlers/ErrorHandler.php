@@ -14,7 +14,7 @@ class ErrorHandler
 
   private static function logError($message)
   {
-    $logFile = './error.log';
+    $logFile = 'error.log';
     $timestamp = date('Y-m-d H:i:s');
     $logEntry = "[$timestamp] $message\n";
     file_put_contents($logFile, $logEntry, FILE_APPEND);

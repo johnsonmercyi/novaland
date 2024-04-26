@@ -1,7 +1,7 @@
 <?php
 // Load required files (e.g., controllers, models, helpers)
 require_once './http/Controller.php';
-require_once './http/UserController.php';
+require_once './http/VaccineAppointmentController.php';
 require_once './handlers/ErrorHandler.php';
 require_once './config/Route.php';
 
@@ -17,12 +17,10 @@ $request_method = $_SERVER['REQUEST_METHOD'];
  */
 Route::set($request_uri, $request_method, [
   'GET' => [
-    '/users' => 'UserController@index',
-    '/products' => 'ProductController@getProducts',
+    '/vaccine_appointment' => 'VaccineAppointmentController@index',
   ],
   'POST' => [
-    '/users' => 'UserController@createUser',
-    '/products' => 'ProductController@createProduct',
+    '/vaccine_appointment' => 'VaccineAppointmentController@create',
   ],
   // Add more routes for other HTTP methods (PUT, DELETE, etc.)
 ]);
