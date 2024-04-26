@@ -88,5 +88,6 @@ single-card{
   .section.section-2 .section-2-single-card{
     flex-direction: column !important;
     margin-top: initial;
+    
   }
 }
