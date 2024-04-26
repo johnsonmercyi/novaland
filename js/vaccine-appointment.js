@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
     ]);
 
     vaccineLocation.options = JSON.stringify([
-      { label: "Location 1", value: "location-1" },
-      { label: "Location 2", value: "location-2" },
+      { label: "South-west pharmacy", value: "South-west-pharmacy" },
+      { label: "Vangaurd pharmacy", value: "Vangaurd-pharmacy" },
+      { label: "Pharmsave pharmacy", value: "Pharmsave-pharmacy" },
+      { label: "Walmart pharmacy", value: "Walmart-pharmacy" },
     ]);
 
   }

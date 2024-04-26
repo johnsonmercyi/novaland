@@ -27,8 +27,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
     guidelinecontent.content = JSON.stringify(guideline.testAppointments);
 
     testLocation.options = JSON.stringify([
-      { label: "Location 1", value: "location-1" },
-      { label: "Location 2", value: "location-2" },
+      { label: "South-west pharmacy", value: "South-west-pharmacy" },
+      { label: "Vangaurd pharmacy", value: "Vangaurd-pharmacy" },
+      { label: "Pharmsave pharmacy", value: "Pharmsave-pharmacy" },
+      { label: "Walmart pharmacy", value: "Walmart-pharmacy" },
     ]);
 
   }

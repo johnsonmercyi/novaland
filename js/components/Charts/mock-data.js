@@ -1,10 +1,10 @@
 const chartData = {
   chart: [
-    { level: 25, label: "Nigeria" },
-    { level: 100, label: "United Stateds" },
-    { level: 50, label: "Canada" },
-    { level: 25, label: "United Kingdom" },
-    { level: 75, label: "Ghana" },
+    { level: 25, label: "Darmouth" },
+    { level: 100, label: "Oshawa" },
+    { level: 50, label: "badeck" },
+    { level: 25, label: "Guelph" },
+    { level: 75, label: "Turo" },
   ], ruler: {
     labels: [
       { text: "Level 1", bg: "#FFCCCC" },
