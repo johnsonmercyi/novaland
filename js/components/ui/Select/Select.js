@@ -138,7 +138,6 @@ class Select extends HTMLElement {
     this.shadowRoot.innerHTML = '';
     this.loadStyle();
     const options = JSON.parse(this._options);
-    console.log("OPTIONS: ", options, options.length);
     const template = document.createElement('template');
     template.innerHTML = `
       <div class="input-field-wrapper">

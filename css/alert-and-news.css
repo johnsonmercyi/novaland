@@ -6,7 +6,7 @@ div.section {
   width : 100%;
   height: auto;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 div.section.section-1 {
@@ -16,7 +16,7 @@ div.section.section-1 {
 
 div.section.section-2 {
   align-items: center;
-  margin-top : 3rem;
+  margin-top : 1rem;
 }
 
 div.section div {

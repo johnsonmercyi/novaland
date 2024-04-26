@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const guidelinecontent = document.querySelector("nova-guideline");
 
   const form = document.querySelector("nova-form");
-  const healthCardNumber = document.querySelector("nova-field[name='healthCardNumber']");
+  const healthCardNumber = document.querySelector("nova-field[name='health_card_number']");
   const email = document.querySelector("nova-field[name='email']");
   const address = document.querySelector("nova-field[name='address']");
-  const dateOfBirth = document.querySelector("nova-field[name='dateOfBirth']");
-  const testLocation = document.querySelector("nova-select[name='testLocation']");
-  const availableDate = document.querySelector("nova-field[name='availableDate']");
-  const availableTime = document.querySelector("nova-field[name='availableTime']");
+  const dateOfBirth = document.querySelector("nova-field[name='date_of_birth']");
+  const testLocation = document.querySelector("nova-select[name='test_location']");
+  const availableDate = document.querySelector("nova-field[name='available_date']");
+  const availableTime = document.querySelector("nova-field[name='available_time']");
 
   const submitButton = document.querySelector("nova-button");
 

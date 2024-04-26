@@ -13,7 +13,8 @@
     <script src="./js/components/PageLink/PageLink.js"></script>
     <script src="./js/components/Content/Content.js"></script>
     <script src="./js/components/Guideline/Guideline.js"></script>
-    <script src="./js/components/Form/Form.js"></script>
+    <script type="module" src="./js/components/ui/Alert/Alert.js"></script>
+    <script type="module" src="./js/components/Form/Form.js"></script>
     <script src="./js/components/ui/TextField/TextField.js"></script>
     <script src="./js/components/ui/Select/Select.js"></script>
     <script type="module" src="./js/components/ui/Button/Button.js"></script>
@@ -40,7 +41,7 @@
       formtitle="Test Appointment Form"
     >
       <nova-field
-        name="healthCardNumber"
+        name="health_card_number"
         type="text"
         placeholder="Health card number"
         showlabel="false"
@@ -61,27 +62,27 @@
       ></nova-field>
 
       <nova-field
-        name="dateOfBirth"
+        name="date_of_birth"
         type="date"
         placeholder="Date of birth"
         showlabel="false"
       ></nova-field>
 
       <nova-select
-        name="testLocation"
+        name="test_location"
         showlabel="false"
         label="Test location"
       ></nova-select>
 
       <nova-field
-        name="availableDate"
+        name="available_date"
         type="date"
         placeholder="Available date"
         showlabel="false"
       ></nova-field>
 
       <nova-field
-        name="availableTime"
+        name="available_time"
         type="time"
         placeholder="Available time"
         showlabel="false"

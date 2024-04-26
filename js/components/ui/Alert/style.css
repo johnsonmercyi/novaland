@@ -1,0 +1,27 @@
+@import url(../../../../css/global-reset.css);
+
+.alert {
+  width           : 100%;
+  height          : auto;
+  padding         : 0.5em;
+  border-radius: 0.3rem;
+
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : center;
+
+  margin: auto;
+
+  font-size: 0.9rem;
+}
+
+.alert img {
+  margin-right: 1rem;
+}
+
+@media(min-width: 1000px) {
+  .alert {
+    width                : 87%;
+    max-width            : 80rem;
+  }
+}

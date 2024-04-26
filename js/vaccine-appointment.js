@@ -44,24 +44,45 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
   submitButton && submitButton.shadowRoot.querySelector(".button-wrapper button")
     .addEventListener('click', async (event) => {
-      // const resp = await fetch('/novaland/api/users');
-      // const data = await resp.json();
-      // console.log("RESPONSE: ", data);
-      const valid = validateFields();
-      if (valid) {
-        const data = formData();
-        // console.log("Data: ", data);
-        const response = await fetch('/novaland/api/vaccine_appointment', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        });
+      try {
+        // const resp = await fetch('/novaland/api/users');
+        // const data = await resp.json();
+        // console.log("RESPONSE: ", data);
+        const valid = validateFields();
+        if (valid) {
+          const data = formData();
+          // console.log("Data: ", data);
+          const response = await fetch('/novaland/api/vaccine_appointment-er', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+  
+          const respData = await response.json();
+          console.log("FORM SUBMIT: ", respData);
 
-        const respData = await response.json();
+          if (respData.success) {
+            form.alertform = "true";
+            form.alertformtype = "success";
+            form.alertformmessage = `Your appointment has been scheduled!`;
+          } else {
+            form.alertform = "true";
+            form.alertformtype = "error";
+            form.alertformmessage = `${respData.message}`;
+          }
 
-        console.log("FORM SUBMIT: ", respData);
+          await new Promise((resolve) => setTimeout(resolve, 5000));
+          form.alertform = "false";
+        }
+      } catch (error) {
+        form.alertform = "true";
+        form.alertformtype = "error";
+        form.alertformmessage = `${error.message}`;
+
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+        form.alertform = "false";
       }
     });
 
