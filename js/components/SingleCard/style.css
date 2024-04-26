@@ -30,3 +30,9 @@
     padding: 1rem 0;
     font-weight: 600;
 }
+@media (max-width: 767px){
+    .single-card-wrapper .single-card{
+        text-align: left;
+        padding: 1rem 1rem;
+    }
+}
