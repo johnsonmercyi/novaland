@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const email = document.querySelector("nova-field[name='email']");
   const address = document.querySelector("nova-field[name='address']");
   const vaccineType = document.querySelector("nova-select[name='vaccine_type']");
-  const dateOfBirth = document.querySelector("nova-field[name='date_of_birth']");
+  const dateOfBirth = document.querySelector("nova-select[name='date_of_birth']");
   const vaccineLocation = document.querySelector("nova-select[name='vaccine_location']");
-  const availableDate = document.querySelector("nova-field[name='available_date']");
-  const availableTime = document.querySelector("nova-field[name='available_time']");
+  const availableDate = document.querySelector("nova-select[name='available_date']");
+  const availableTime = document.querySelector("nova-select[name='available_time']");
 
   const submitButton = document.querySelector("nova-button");
 
