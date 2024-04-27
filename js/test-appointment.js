@@ -1,4 +1,4 @@
-import { guideline, sidebarMenu } from "./config/nova-settings.mjs";
+import { formDateAndTime, guideline, sidebarMenu } from "./config/nova-settings.mjs";
 
 document.addEventListener("DOMContentLoaded", function (e) {
 
@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
       { label: "Pharmsave pharmacy", value: "Pharmsave-pharmacy" },
       { label: "Walmart pharmacy", value: "Walmart-pharmacy" },
     ]);
+
+    dateOfBirth.options = JSON.stringify(formDateAndTime.dateOfBirth);
+    availableDate.options = JSON.stringify(formDateAndTime.date);
+    availableTime.options = JSON.stringify(formDateAndTime.time);
 
   }
 

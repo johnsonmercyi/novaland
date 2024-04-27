@@ -341,38 +341,38 @@ export const chartData = {
   ]
 }
 
-export const formValues = {
+export const formDateAndTime = {
   date: [
     {
-      date:date1, value:"03/4/2021"
+      label: "2021-04-03", value: "2021-04-03"
     },
     {
-      date:date1, value:"23/5/2021"
+      label: "2021-05-23", value: "2021-05-23"
     },
     {
-      date:date1, value:"10/2/2021"
+      label: "2021-02-10", value: "2021-02-10"
     }
   ],
   dateOfBirth: [
     {
-      date:date1, value:"03/4/2021"
+      label: "2021-04-03", value: "2021-04-03"
     },
     {
-      date:date1, value:"23/5/2021"
+      label: "2021-05-23", value: "2021-05-23"
     },
     {
-      date:date1, value:"10/2/2021"
+      label: "2021-02-10", value: "2021-02-10"
     }
   ],
   time: [
     {
-      time:time1, value:"3pm"
+      label: "3pm", value: "15:00"
     },
     {
-      time:time1, value:"9am"
+      label: "9am", value: "09:00"
     },
     {
-      time:time1, value:"10.30am"
+      label: "10.30am", value: "10:30am"
     }
   ],
 }

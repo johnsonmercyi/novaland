@@ -19,12 +19,14 @@ class TestAppointmentController extends Controller
   {
     $json = file_get_contents('php://input');
     $data = json_decode($json, true); // true to get associative array
+
+    //  print_r($data);
     try {
       $dbResponse = TestAppointment::create($data);
 
-      if ($dbResponse === 0 || !$dbResponse) {
-        throw new Exception("Record failed to create likely because there's an appointment already scheduled for this citizen.", 1);
-      }
+      // if ($dbResponse === 0 || !$dbResponse) {
+      //   throw new Exception("Record failed to create likely because there's an appointment already scheduled for this citizen.", 1);
+      // }
     } catch (Exception $e) {
       return $this->errorResponse($e->getMessage());
     }

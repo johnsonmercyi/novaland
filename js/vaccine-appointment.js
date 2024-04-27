@@ -1,4 +1,4 @@
-import { guideline, sidebarMenu } from "./config/nova-settings.mjs";
+import { formDateAndTime, guideline, sidebarMenu } from "./config/nova-settings.mjs";
 
 document.addEventListener("DOMContentLoaded", function (e) {
 
@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
       { label: "Walmart pharmacy", value: "Walmart-pharmacy" },
     ]);
 
+    dateOfBirth.options = JSON.stringify(formDateAndTime.dateOfBirth);
+    availableDate.options = JSON.stringify(formDateAndTime.date);
+    availableTime.options = JSON.stringify(formDateAndTime.time);
+
   }
 
   // Initialize this component
@@ -54,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         if (valid) {
           const data = formData();
           // console.log("Data: ", data);
-          const response = await fetch('/novaland/api/vaccine_appointment-er', {
+          const response = await fetch('/novaland/api/vaccine_appointment', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -185,8 +189,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
     healthCardNumber.value = "";
     email.value = "";
     address.value = "";
+    vaccineType.value = "";
     dateOfBirth.value = "";
-    testLocation.value = "";
+    vaccineLocation.value = "";
     availableDate.value = "";
     availableTime.value = "";
   }
