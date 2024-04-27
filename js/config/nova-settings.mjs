@@ -341,3 +341,39 @@ export const chartData = {
   ]
 }
 
+export const formValues = {
+  date: [
+    {
+      date:date1, value:"03/4/2021"
+    },
+    {
+      date:date1, value:"23/5/2021"
+    },
+    {
+      date:date1, value:"10/2/2021"
+    }
+  ],
+  dateOfBirth: [
+    {
+      date:date1, value:"03/4/2021"
+    },
+    {
+      date:date1, value:"23/5/2021"
+    },
+    {
+      date:date1, value:"10/2/2021"
+    }
+  ],
+  time: [
+    {
+      time:time1, value:"3pm"
+    },
+    {
+      time:time1, value:"9am"
+    },
+    {
+      time:time1, value:"10.30am"
+    }
+  ],
+}
+
