@@ -65,7 +65,7 @@ stats-card {
   display: flex;
   margin-top: 20px;
 }
-.section.section-2 .section-2-single-card{
+.section.section-2 .section-2-single-card {
   flex-direction: row !important;
   width: 100%;
   display: flex;

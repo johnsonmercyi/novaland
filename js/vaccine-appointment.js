@@ -69,22 +69,27 @@ document.addEventListener("DOMContentLoaded", function (e) {
             form.alertform = "true";
             form.alertformtype = "success";
             form.alertformmessage = `Your appointment has been scheduled!`;
+
+            // Clear form
+            resetForm();
+
+            // Removes the success alert message from view after 5 seconds
+            await new Promise((resolve) => setTimeout(resolve, 5000));
+            form.alertform = "false";
           } else {
             form.alertform = "true";
             form.alertformtype = "error";
             form.alertformmessage = `${respData.message}`;
           }
 
-          await new Promise((resolve) => setTimeout(resolve, 5000));
-          form.alertform = "false";
         }
       } catch (error) {
         form.alertform = "true";
         form.alertformtype = "error";
         form.alertformmessage = `${error.message}`;
 
-        await new Promise((resolve) => setTimeout(resolve, 5000));
-        form.alertform = "false";
+        // await new Promise((resolve) => setTimeout(resolve, 5000));
+        // form.alertform = "false";
       }
     });
 
@@ -174,6 +179,16 @@ document.addEventListener("DOMContentLoaded", function (e) {
       [availableDate.name]: availableDate.value,
       [availableTime.name]: availableTime.value,
     };
+  }
+
+  function resetForm() {
+    healthCardNumber.value = "";
+    email.value = "";
+    address.value = "";
+    dateOfBirth.value = "";
+    testLocation.value = "";
+    availableDate.value = "";
+    availableTime.value = "";
   }
 
 

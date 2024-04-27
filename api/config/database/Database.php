@@ -22,22 +22,22 @@ class Database
       if (self::$db === null) {
         self::initialize();
       }
-      
+
       $stmt = self::$db->prepare($sql);
-      
+
       if ($params) {
         $stmt->execute($params);
       } else {
         $stmt->execute();
       }
-      
+
       $queryType = strtoupper(substr(trim($sql), 0, 6)); // Check the first 6 characters of the SQL query
-      
+
       switch ($queryType) {
         case 'SELECT':
           return $stmt->fetchAll($fetchMode);
           break;
-          case 'INSERT':
+        case 'INSERT':
           return self::$db->lastInsertId();
           break;
         case 'UPDATE':
@@ -49,9 +49,8 @@ class Database
           break;
       }
     } catch (Exception $e) {
-      return "Database query failed: " . $e->getMessage();
+      echo "Database query failed: " . $e->getMessage();
       exit;
     }
   }
-
 }

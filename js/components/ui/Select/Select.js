@@ -149,7 +149,7 @@ class Select extends HTMLElement {
           class="${this._error ? 'error' : ''}"
           name="${this._name}"
           placeholder="${this._placeholder}">
-          <option value="" selected>-- ${this._label} --</option>
+          <option value="" selected>${this._label}</option>
 
           ${
             options.length ? options.map(option =>`

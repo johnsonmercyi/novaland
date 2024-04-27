@@ -56,7 +56,9 @@ export const generatePageSubtopicsIDs = (pageSubtopics) => {
   // Automatically generate IDs and their values for the body content sections (divs)
   pageSubtopics.forEach((topic, index) => {
     const header = pageSubtopics[index].header;
-    pageSubtopics[index].id = `${String(header).toLowerCase().replaceAll(" ", "-")}`;
+    let idString = String(header).toLowerCase().replaceAll(" ", "-");
+    idString = idString.replace(/[;.:,]/g, "");
+    pageSubtopics[index].id = idString;
   });
   
   return pageSubtopics;

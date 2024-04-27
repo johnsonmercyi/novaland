@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const healthCardNumber = document.querySelector("nova-field[name='health_card_number']");
   const email = document.querySelector("nova-field[name='email']");
   const address = document.querySelector("nova-field[name='address']");
-  const dateOfBirth = document.querySelector("nova-field[name='date_of_birth']");
+  const dateOfBirth = document.querySelector("nova-select[name='date_of_birth']");
   const testLocation = document.querySelector("nova-select[name='test_location']");
-  const availableDate = document.querySelector("nova-field[name='available_date']");
-  const availableTime = document.querySelector("nova-field[name='available_time']");
+  const availableDate = document.querySelector("nova-select[name='available_date']");
+  const availableTime = document.querySelector("nova-select[name='available_time']");
 
   const submitButton = document.querySelector("nova-button");
 
@@ -39,12 +39,45 @@ document.addEventListener("DOMContentLoaded", function (e) {
   initComponent();
 
   submitButton && submitButton.shadowRoot.querySelector(".button-wrapper button")
-    .addEventListener('click', (event) => {
+    .addEventListener('click', async (event) => {
+      try {
+        const valid = validateFields();
+        if (valid) {
+          const payload = formData();
+  
+          const response = await fetch('/novaland/api/test_appointment', {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json' 
+            },
+            body: JSON.stringify(payload)
+          });
 
-      const valid = validateFields();
-      if (valid) {
-        const data = formData();
-        console.log("Data: ", data);
+          const data = await response.json();
+          console.log("Data: ", data);
+  
+          if (data.success) {
+            form.alertform = "true";
+            form.alertformtype = "success";
+            form.alertformmessage = `Your appointment has been scheduled!`;
+
+            // Clear form
+            resetForm();
+
+            // Removes the success alert message from view after 5 seconds
+            await new Promise((resolve) => setTimeout(resolve, 5000));
+            form.alertform = "false";
+          } else {
+            form.alertform = "true";
+            form.alertformtype = "error";
+            form.alertformmessage = `${data.message}`;
+          }
+
+        }
+      } catch (error) {
+        form.alertform = "true";
+        form.alertformtype = "error";
+        form.alertformmessage = `${error.message}`;
       }
     });
 
@@ -124,5 +157,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
       [availableDate.name]: availableDate.value,
       [availableTime.name]: availableTime.value,
     };
+  }
+
+  function resetForm () {
+    healthCardNumber.value = "";
+    email.value = "";
+    address.value = "";
+    dateOfBirth.value = "";
+    testLocation.value = "";
+    availableDate.value = "";
+    availableTime.value = "";
   }
 });

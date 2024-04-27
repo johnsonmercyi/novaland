@@ -90,9 +90,9 @@ export const onThisPageLoad = {
       linktext: "How to self-isolate",
       link: "#"
     }
-     
+
   ],
-  alertandnews: [ 
+  alertandnews: [
     {
       linktext: "Weekly Highlights",
       link: "#"
@@ -140,7 +140,7 @@ export const onThisPageLoad = {
     {
       linktext: "Situation in NovaLand",
       link: "#"
-    }  
+    }
   ]
 }
 
@@ -215,7 +215,7 @@ export const pagesSubTopics = {
                 <li>Thank you for trusting us to keep you informed, and please remember that we are here to support you through this challenging time. Stay safe, stay informed, and take care of yourself and your loved ones. </li>
               </ul>
             `
-     },
+    },
   ],
   mentalhealth: [
     {
@@ -234,7 +234,7 @@ export const pagesSubTopics = {
     }, {
       header: "Provincial Mental Health and Addictions Crisis Line",
       body: "If you’re experiencing a mental health or addictions crisis, or are concerned about someone who is, the Provincial Mental Health and Addictions Crisis Line is available 24 hours a day, 7 days a week. <b>Call toll-free: 1-888-429-8167</b>"
-    } 
+    }
   ],
   travelguide: [
     {
@@ -273,17 +273,17 @@ export const pagesSubTopics = {
 }
 
 export const guideline = {
-  testAppointments: [  
+  testAppointments: [
     {
       image: "./img/beforeStart.svg",
       title: "Before you start",
       content: [
         {
           sub: `You don't need a health card to use this service. You can still receive a COVID-19 test, but you will need to book your appointment using the form below.`
-        },{
+        }, {
           sub: `You need a vaild telephone number and a valid email for this service. `
         }
-      ] 
+      ]
     },
     {
       image: "./img/afterStart.svg",
@@ -292,20 +292,20 @@ export const guideline = {
         {
           sub: "In case you test positive, you will be required to start a mandatory qurantine of 4 weeks. Read the Novaland Health Act for more details."
         }
-      ] 
+      ]
     }
   ],
-  vaccineAppointments: [  
+  vaccineAppointments: [
     {
       image: "./img/beforeStart.svg",
       title: "Before you start",
       content: [
         {
           sub: "You need a valid NovaLand health card to use this service. If you do not have a Nova Land health card, you can still receive a COVID-19 vaccine, but you will need to book your appointment by calling the phone number above."
-        },{
+        }, {
           sub: "Nova Landers who received COVID-19 vaccine doses outside the province or through a workplace vaccination program can update their proof of vaccination"
         }
-      ] 
+      ]
     },
     {
       image: "./img/afterStart.svg",
@@ -314,7 +314,7 @@ export const guideline = {
         {
           sub: "You will be required to complete a health status questionnaire, and vaccination consent form for yourself or on behalf of the person receiving vaccine. Check the Novaland Health app for more details."
         }
-      ] 
+      ]
     }
   ]
 }

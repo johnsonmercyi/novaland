@@ -19,14 +19,10 @@ $request_method = $_SERVER['REQUEST_METHOD'];
 Route::set($request_uri, $request_method, [
   'GET' => [
     '/vaccine_appointment' => 'VaccineAppointmentController@index',
-  ],
-  'POST' => [
-    '/vaccine_appointment' => 'VaccineAppointmentController@create',
-  ],
-  'GET' => [
     '/test_appointment' => 'TestAppointmentController@index',
   ],
   'POST' => [
+    '/vaccine_appointment' => 'VaccineAppointmentController@create',
     '/test_appointment' => 'TestAppointmentController@create',
   ],
   // Add more routes for other HTTP methods (PUT, DELETE, etc.)

@@ -14,7 +14,10 @@
     <script src="./js/components/Content/Content.js"></script>
     <script type="module" src="./js/components/ui/Button/Button.js"></script>
     <script type="module" src="./js/components/Charts/BarChart.js"></script>
-    <script type="module" src="./js/components/SingleCard/SingleCard.js"></script>
+    <script
+      type="module"
+      src="./js/components/SingleCard/SingleCard.js"
+    ></script>
     <script type="module" src="./js/components/StatsCard/StatsCard.js"></script>
   </head>
 
@@ -30,22 +33,27 @@
           </div>
           <nova-sidebar></nova-sidebar>
         </div>
-
         <div class="section section-2" id="section-2">
-          <h2>Latest Covid-19 Numbers <span>Last updated: March 26, 2024. 9am EST</span></h2>
+          <h2>
+            Latest Covid-19 Numbers
+            <span>Last updated: March 26, 2024. 9am EST</span>
+          </h2>
           <stats-card class="cases"></stats-card>
           <stats-card class="death"></stats-card>
           <div class="section-2-single-card">
-              <single-card class="test"></single-card>
-              <single-card class="percentage-positive"></single-card>
+            <single-card class="test"></single-card>
+            <single-card class="percentage-positive"></single-card>
           </div>
         </div>
 
         <div class="section section-3" id="section-3">
-            <h2>COVID-19 Activity Levels<span>Last updated: March 26, 2024. 9am EST</span></h2>
+          <h2>
+            COVID-19 Activity Levels<span
+              >Last updated: March 26, 2024. 9am EST</span
+            >
+          </h2>
           <nova-bar-chart></nova-bar-chart>
         </div>
-        
       </main>
     </div>
     <nova-footer copyright="Copyright &copy; NovaLand 2024"></nova-footer>
