@@ -216,21 +216,6 @@ export const pagesSubTopics = {
               </ul>
             `
      },
-    // {
-    //   header: "Latest Covid-19 Numbers",
-    //   body: `<ul>
-    //             <li>Last updated: March 26, 2024. 9am EST</li>
-                
-    //           </ul>
-    //         `
-    // },
-    // {
-    //   header: "COVID-19 Activity Levels",
-    //   body: `<ul>
-    //             <li>Last updated: March 26, 2024. 9am EST</li>
-    //           </ul>
-    //         `
-    // }
   ],
   mentalhealth: [
     {
@@ -336,11 +321,11 @@ export const guideline = {
 
 export const chartData = {
   chart: [
-    { level: 25, label: "Nigeria" },
-    { level: 100, label: "United Stateds" },
-    { level: 50, label: "Canada" },
-    { level: 90, label: "United Kingdom" },
-    { level: 75, label: "Ghana" },
+    { level: 25, label: "Darmouth" },
+    { level: 100, label: "Oshawa" },
+    { level: 50, label: "badeck" },
+    { level: 25, label: "Guelph" },
+    { level: 75, label: "Turo" }
   ], ruler: {
     labels: [
       { text: "Level 1", bg: "#FFCCCC" },
