@@ -99,11 +99,11 @@ export const onThisPageLoad = {
     },
     {
       linktext: "Latest COVID-19 numbers",
-      link: "#"
+      link: "#section-2"
     },
     {
       linktext: "COVID-19 activity levels",
-      link: "#"
+      link: "#section-3"
     }
   ],
   mentalhealth: [
