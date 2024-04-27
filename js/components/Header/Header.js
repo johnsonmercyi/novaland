@@ -84,7 +84,7 @@ class Header extends HTMLElement {
         }
       </style>
       <header class="header">
-        <img src="${this._logo}" width="250vh"/>
+        <a href="./index.html"><img src="${this._logo}" width="250vh"/></a>
         ${
           this._showheadertext ? `
             <h1>Coronavirus (COVID-19)</h1>
